@@ -1,7 +1,7 @@
 from timeit import default_timer as timer
 
 
-n = 500
+n = 200
 mem = [[-1 for j in range(n + 2)] for i in range(n + 2)]
 
 
@@ -20,11 +20,10 @@ def custom_mem(height, left):
 
 
 if __name__ == '__main__':
-    # start = timer()
-    # print(custom_mem(1, n) - 1)
-    #
-    # end = timer()
-    # print(f'execution lasted {end - start} seconds')
+    start = timer()
+    print(custom_mem(1, n) - 1)
 
-    print([-1 for j in range(10)])
+    end = timer()
+    print(f'execution lasted {end - start} seconds')
+
 
