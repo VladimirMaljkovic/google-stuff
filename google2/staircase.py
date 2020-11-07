@@ -16,6 +16,7 @@ def count(height, left):
 
 def bottom_up(n):
     m = [[0 for i in range(n + 1)] for j in range(n + 1)]
+    # i have n+1 lists made of n+1 0's
     m[0][0] = 1  # base case
 
     for last in range(1, n + 1):
@@ -30,7 +31,6 @@ def bottom_up(n):
 if __name__ == '__main__':
     n = 500
     start = timer()
-    # print(count(1, n) - 1)
     bottom_up(n)
 
     end = timer()

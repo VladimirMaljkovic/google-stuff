@@ -3,6 +3,8 @@ from timeit import default_timer as timer
 
 n = 200
 mem = [[-1 for j in range(n + 2)] for i in range(n + 2)]
+# list of lists that will set -1 n+2 times on n + 2 lists
+# first dimension is height, second is how many bricks i have left apparently
 
 
 def custom_mem(height, left):
