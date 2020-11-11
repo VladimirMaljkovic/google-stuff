@@ -25,7 +25,7 @@ def bottom_up(n):
             if left >= last:
                 m[last][left] += m[last - 1][left - last]
 
-    print(m[n][n] - 1)
+    return m[n][n] - 1
 
 
 if __name__ == '__main__':
