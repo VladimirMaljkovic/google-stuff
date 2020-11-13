@@ -33,4 +33,4 @@ def solution2(x, y):
 if __name__ == '__main__':
     # print(solution(2, 5))
     # prepravka(3, 6)
-    print(solution2(1, 7))
+    print(solution2(15, 15))
